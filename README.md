@@ -1,5 +1,9 @@
 # LUCid: Redefining Relevance for Lifelong Personalization
 
+<p align="center">
+  <a href="https://huggingface.co/datasets/anonymous-654/LUCid" ><img src="https://img.shields.io/badge/🤗-Data-green" height="23"></a>
+</p>
+
 > Benchmarking *situational relevance* in lifelong personalization.
 
 ---
@@ -59,7 +63,29 @@ pip install -r requirements.txt
 
 ### 📦 Data
 
-The **LUCid benchmark** is available in the data folder of this repository.
+The **LUCid benchmark** is available on [![Hugging Face](https://img.shields.io/badge/🤗%20Dataset-LUCid-yellow)](https://huggingface.co/datasets/anonymous-654/LUCid).  
+Download the dataset files into a local `data/` directory.
+
+```bash
+mkdir -p data/
+cd data/
+
+# Core benchmark variants
+wget https://huggingface.co/datasets/anonymous-654/LUCid/resolve/main/lucid_c.json
+wget https://huggingface.co/datasets/anonymous-654/LUCid/resolve/main/lucid_s.json
+wget https://huggingface.co/datasets/anonymous-654/LUCid/resolve/main/lucid_b.json
+wget https://huggingface.co/datasets/anonymous-654/LUCid/resolve/main/lucid_l.json
+
+# Oracle / analysis split
+wget https://huggingface.co/datasets/anonymous-654/LUCid/resolve/main/lucid_oracle.json
+
+# Optional subsets
+wget https://huggingface.co/datasets/anonymous-654/LUCid/resolve/main/lucid.json
+wget https://huggingface.co/datasets/anonymous-654/LUCid/resolve/main/lucid_5.json
+wget https://huggingface.co/datasets/anonymous-654/LUCid/resolve/main/lucid_10.json
+
+cd ..
+```
 
 ## 📜 Dataset Format
 
