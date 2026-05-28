@@ -54,7 +54,7 @@ Additionally:
 ### Setup
 
 ```bash
-git clone replace link here
+git clone https://github.com/anonymous-654/LUCid
 cd LUCid
 python -m venv .venv # python/3.11.5
 source .venv/bin/activate
